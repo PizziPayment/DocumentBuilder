@@ -20,14 +20,14 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: pizzipayment/pld_builder
+          images: ghcr.io/pizzipayment/pld_builder
 
       - name: Log in to the Container registry
         if: github.event_name != 'pull_request'
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
+          username: PizziPayment
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
