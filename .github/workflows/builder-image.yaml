@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: name/app
+          images: pizzipayment/pld_builder
 
       - name: Log in to the Container registry
         if: github.event_name != 'pull_request'
