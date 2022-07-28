@@ -1,16 +1,11 @@
 name: Build PLD builder image
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
-    tags:
-      - 'v*'
 
 jobs:
-  build-pld:
+  build-pld-builder:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
@@ -23,7 +18,6 @@ jobs:
           images: ghcr.io/pizzipayment/pld_builder
 
       - name: Log in to the Container registry
-        if: github.event_name != 'pull_request'
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
           registry: ghcr.io
