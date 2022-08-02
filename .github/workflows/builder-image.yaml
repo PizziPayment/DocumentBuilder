@@ -1,11 +1,11 @@
-name: Build PLD builder image
+name: Build Document builder image
 on:
   push:
     branches:
       - master
 
 jobs:
-  build-pld-builder:
+  build-document-builder:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
@@ -15,7 +15,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/pizzipayment/pld_builder
+          images: ghcr.io/pizzipayment/document_builder
 
       - name: Log in to the Container registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9

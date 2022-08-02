@@ -1,6 +1,7 @@
-# Pizzi PLD builder
+# Pizzi document builder
 
-A simple docker image to setup an environment to build the PLD.
+A simple docker image to setup an environment to build document usually from
+this [template](https://github.com/PizziPayment/TemplateForPDF).
 
 - Volume:
-    - `/source`: source of the PLD (root of the PizziPLD repo).
+    - `/source`: source of the document (root of the repo).

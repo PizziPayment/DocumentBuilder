@@ -1,8 +1,8 @@
 FROM ubuntu:22.04
-LABEL org.opencontainers.image.title="Pizzi PLD Builder"
-LABEL org.opencontainers.image.source="https://github.com/PizziPayment/PLDBuilder"
-LABEL org.opencontainers.image.url="https://github.com/PizziPayment/PLDBuilder"
-LABEL org.opencontainers.image.description="An image to build the PLD."
+LABEL org.opencontainers.image.title="Pizzi Document Builder"
+LABEL org.opencontainers.image.source="https://github.com/PizziPayment/DocumentBuilder"
+LABEL org.opencontainers.image.url="https://github.com/PizziPayment/DocumentBuilder"
+LABEL org.opencontainers.image.description="An image to build PDF document."
 
 VOLUME /source
 WORKDIR /source
